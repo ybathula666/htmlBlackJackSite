@@ -1,0 +1,150 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="#">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Document</title>
+  </head>
+  <body class="Page_Body" , text="#FFFFFF">
+    <div class="Title_Box">
+      <h1>Project Explorer</h1>
+    </div>
+    <div class="Subtitle">
+      <h3>- - - - Select a Project - - - -</h3>
+    </div>
+    <div id="buttons-div" , class="Buttons_box">
+      <button id="AgeInDaysButton">Age In Days</button>
+      <button id="CatGenButton">Cat Generator</button>
+      <button id="RPSButton">Rock Paper Scissors</button>
+      <button id="ColorButton">Button Color</button>
+      <button id="BlkJackButton">Blackjack</button>
+    </div>
+
+    <div class="Projects-Div"  style="display: block" id="home">
+
+
+
+      <div class="Challenge_1" id="ageCalc"  style="display: none;">
+        <h2>Challenge 1: Your age in Days</h2>
+        <div class="flex-box-container-1">
+          <div>
+            <button class="btn = btn-primary" onclick="ageInDays()">
+              Click me!
+            </button>
+          </div>
+          <div>
+            <button class="btn = btn-warning" onclick="reset()">Reset!</button>
+          </div>
+        </div>
+        <div class="flex-box-container-1">
+          <div id="flex-box-result"></div>
+        </div>
+      </div>
+
+
+
+      <div class="Challenge_2"  id="cats" style="display: none;">
+        <h2>Challenge 2: Cat generator</h2>
+        <button class="btn = btn-success" id="cat-generator" onclick="newCat()">
+          Generate Cat
+        </button>
+        <div class="flex-box-container-2" id="cat-holder"></div>
+      </div>
+
+
+
+      <div class="Challenge_3" id="rps" style="display: none" >
+      <h2>Challenge 3: Rock, Paper, Scissors!</h2>
+      <div class="flex-box-rps" id="flex-box-rps-div">
+        <img
+          src="http://images.clipartpanda.com/rock-clipart-alpine-landscape-rock-rubble-01b-al1.png"
+          alt=""
+          height="150"
+          width="150"
+          onclick="rpsGame(this)"
+          id="rock"
+        />
+        <img
+          src="http://images.clipartpanda.com/paper-clip-art-a_stack_of_papers_and_documanets_in_an_office_0515-1007-3003-0814_SMU.jpg"
+          alt=""
+          height="150"
+          width="150"
+          onclick="rpsGame(this)"
+          id="paper"
+        />
+        <img
+          src="http://images.clipartpanda.com/scissors-clip-art-scissors-clip-art-5.jpg"
+          alt=""
+          height="150"
+          width="150"
+          onclick="rpsGame(this)"
+          id="scissors"
+        />
+      </div>
+    </div>
+
+
+
+      <div class="Challenge_4" id="btnColor"  style="display: none;">  
+        <div id="HoldingBox"></div>
+    
+        </div>
+
+
+
+      <div class="Challenge_5" id="blkJack" style="display: none;">
+        <h2>Challenge 5: Blackjack</h2>
+        <h3><span id="blackjack-result"> Let's Play!</span></h3>
+        <div class="flex-blackjack-row-1">
+          <div id="your-box">
+            <h2>You: <span id="your-blackjack-result">0 </span></h2>
+          </div>
+          <div id="dealer-box">
+            <h2>Dealer: <span id="dealer-blackjack-result">0</span></h2>
+          </div>
+        </div>
+        <div class="flex-blackjack-row-2">
+          <div class="BlkJack-BtnBox">
+            <button class="hitBtn" id="blackjack-hit-button">
+              Hit
+            </button>
+            <button class="standBtn" id="blackjack-stand-button">
+              Stand
+            </button>
+            <button class="dealBtn" id="blackjack-deal-button">
+              Deal
+            </button>
+          </div>
+        </div>
+        <div class="flex-blackjack-row-3">
+          <table>
+            <tr>
+              <!-- 'tr' means 'table row'. This tag div will contain elements in same row-->
+              <th>Wins</th>
+              <!-- 'th' for each header in the table row-->
+              <th>Losses</th>
+              <!-- 'th' for each header in the table row-->
+              <th>Draws</th>
+              <!-- 'th' for each header in the table row-->
+            </tr>
+            <tr>
+              <td><span id="Wins">0</span></td>
+              <!-- each 'td' makes up a cell for each prior declared header-->
+              <td><span id="Losses"> 0 </span></td>
+              <!-- Span allows for a changing component, like a score. We can access it and change it at some point-->
+              <td><span id="Draws">0</span></td>
+            </tr>
+          </table>
+        </div>
+
+      </div>
+    </div>
+    <script src="script1.js"></script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "Proj1",
+			"path": "."
+		},
+		{
+			"name": "blackjack_assets",
+			"path": "../../blackjack_assets"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Proj1"
+	}
+}

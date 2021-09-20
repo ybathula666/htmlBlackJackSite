@@ -1,0 +1,164 @@
+.Title_Box text{
+    color: white;
+}
+
+
+.container-1,
+.container-2,
+.container-3,
+.container-4,
+.container-5,.Projects-Div{
+  margin: 0 auto;
+  width: 75%;
+  text-align: center;
+}
+
+.flex-box-container-1,
+.flex-box-pick-color,
+.flex-blackjack-row-1,
+.flex-box-container-2,
+.flex-blackjack-row-3,
+.flex-blackjack-row-2{
+  display: flex;
+  padding: 10px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.flex-blackjack-row-1,
+.flex-blackjack-row-2 {
+  background: url("https://static.vecteezy.com/system/resources/previews/002/582/109/non_2x/poker-purple-background-playing-card-symbols-pattern-blackjack-vector.jpg");
+  color: #ffffff;
+}
+
+.flex-blackjack-row-1 div {
+  border: 1px solid black;
+  padding: 10px;
+  flex: 1;
+  text-align: center;
+  height: 350px;
+}
+
+.flex-blackjack-row-1 img {
+  width: 25%;
+  padding: 10px;
+}
+.flex-box-container-1 div {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+}
+
+.flex-box-container-2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border: 1px solid black;
+}
+
+.flex-box-container-2 img {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 7);
+}
+
+.flex-box-rps img:hover {
+  box-shadow: 0px 10px 50px rgba(100, 190, 100, 1);
+}
+.flex-box-rps img {
+  box-shadow: 0px 10px 50px;
+  margin: 30px;
+}
+
+.flex-blackjack-row-2 button {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.flex-blackjack-row-2 div {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+table, th, td{
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.Buttons_box, .Subtitle, .Title_Box{
+    display: flex;
+    justify-content: center;
+    font-family:Georgia, 'Times New Roman', Times, serif
+        
+}
+
+.Page_Body{
+    background: url("https://wallpapercave.com/wp/wp5803988.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #461f58;
+    background-size:cover;
+    
+}
+
+.Buttons_box button:hover, .flex-box-container-1 button:hover, .Challenge_2 button:hover{
+    box-shadow: 0px 10px 30px white;
+    background-color:plum; /* Green */
+    
+}
+.Buttons_box button:active, .flex-box-container-1 button:active , .Challenge_2 button:active {
+  background-color: #4f2c6c;
+  box-shadow: 0 5px #3c2767;
+  transform: translateY(4px);
+}
+ 
+
+.Page_Body button, .Buttons_box button{
+    padding: 7px;
+    margin: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color:#a86787;
+    color: white;
+    border: white;
+    transition: 0.4s;
+    
+}
+
+.flex-box-container-1 button, .Challenge_2 button {
+     background-color:dodgerblue;
+     height: 40px;
+     width: 90px;
+     
+}
+
+#blackjack-hit-button{
+    background-color:dodgerblue;
+    height: 40px;
+    width: 60px;
+    
+}
+#blackjack-stand-button{
+    background-color:goldenrod;
+    height: 40px;
+    width: 60px;
+}
+#blackjack-deal-button{
+    background-color:crimson;
+    height: 40px;
+    width: 60px;
+}
+
+
+.BlkJack-BtnBox button:active{
+    background-color: #4f2c6c;
+    box-shadow: 0 5px #3c2767;
+    transform: translateY(4px);
+
+}
+
+.BlkJack-BtnBox button:hover{
+    box-shadow: 0px 10px 30px white;
+    background-color:plum; /* Green */
+}
